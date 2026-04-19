@@ -1,0 +1,13 @@
+# Example layer map for a simple MEMS piezoresistive pressure sensor.
+# Maps DXF layer names (as set in AutoCAD) to GDSII (layer, datatype).
+#
+# Use with:
+#   python -m dxf2gds convert design.dxf out.gds --layer-map layers.yaml
+
+BOUNDARY: 0
+DIAPHRAGM: [1, 0]
+PIEZO: [2, 0]
+METAL: [3, 0]
+PASSIVATION: [4, 0]
+BACKSIDE_ETCH: [5, 0]
+ALIGN_MARKS: [99, 0]
